@@ -1,0 +1,37 @@
+// For more information on how to run this SPFx project in a VS Code Remote Container, please visit https://aka.ms/spfx-devcontainer
+{
+  "name": "Container spfx:1.18.0",
+  "image": "m365pnp/spfx:1.18.0",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "lllllllqw.jsdoc"
+      ],
+      "settings": {}
+    }
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [
+    4321,
+    35729
+  ],
+  "portsAttributes": {
+    "4321": {
+      "protocol": "https",
+      "label": "Manifest",
+      "onAutoForward": "silent",
+      "requireLocalPort": true
+    },
+    "35729": {
+      "protocol": "https",
+      "label": "LiveReload",
+      "onAutoForward": "silent",
+      "requireLocalPort": true
+    }
+  },
+  "remoteUser": "spfx"
+}
