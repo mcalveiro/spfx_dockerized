@@ -33,5 +33,5 @@
       "requireLocalPort": true
     }
   },
-  "remoteUser": "spfx"
+  "remoteUser": "node"
 }
